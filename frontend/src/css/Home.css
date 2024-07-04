@@ -1,6 +1,8 @@
 .navbar{
     display: block;
     background-color: green;
+    box-shadow: 4px 4px 10px black;
+    color: white;
 }
 .navTop{
     display: flex;
@@ -8,7 +10,6 @@
     justify-content: center;
 }
     
-
 .navText{
     display: block;
     font-weight: 700;
@@ -37,4 +38,17 @@
     background-color: white;
     margin-left: auto;
     border-radius: 50%;
+}
+.navList{
+    display: flex;
+    list-style-type: none;
+    align-items:end;
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.navItem{
+    margin-right: auto;
+  
+    color: white;
 }
