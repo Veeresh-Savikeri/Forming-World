@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import Home from '../screens/Home.js';
+
 import { Link } from "react-router-dom";
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [rhome,setRhome] = useState("")
 
 const checkDetails=()=>{
   if(email==="veeresh2004m@gmail.com" && password==="veeresh2004m"){
-      return <Link to={"/home"}/>
+    setRhome("/home")
   }else{
     console.log("incorrect password")
   }
@@ -67,12 +68,13 @@ const checkDetails=()=>{
                     </p>
 
                     <Link
+                     to={rhome}
                       data-mdb-button-init
                       data-mdb-ripple-init
                       className="btn btn-outline-light btn-lg px-5"
                       type="submit"
                       onClick={checkDetails}
-                      to="/home"
+                     
                     >
                       Login
                     </Link>
